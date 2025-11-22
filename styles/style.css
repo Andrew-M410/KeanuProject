@@ -1,3 +1,11 @@
+.body{
+  font-family: Roboto, serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 175%;
+}
+
 .content__section{
   padding: 88px 168px;
 }
@@ -14,6 +22,27 @@
 
 .header{
   padding: 40px 168px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo{
+}
+
+.header__logo-image{
+  width: 100px;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+}
+
+.socials__item{
+  width: 20px;
 }
 
 /*============about============*/
