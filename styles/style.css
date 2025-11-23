@@ -1,8 +1,8 @@
 .body {
+  color: #fff;
   font-family: Roboto, serif;
   font-weight: 400;
   font-size: 16px;
-  color: #fff;
   line-height: 175%;
   background-color: #777;
 }
@@ -22,11 +22,11 @@
 /*============header============*/
 
 .header {
-  line-height: 100%;
-  padding: 40px 168px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 40px 168px 0;
+  line-height: 100%;
 }
 
 .header__logo {
@@ -37,7 +37,6 @@
 }
 
 .socials {
-  list-style: none;
   display: flex;
   gap: 0 16px;
 }
@@ -69,35 +68,38 @@
 }
 
 .about__subtitle {
+  margin-top: 34px;
+  color: #ffbb01;
   font-weight: 400;
   font-size: 24px;
   line-height: 117%;
-  color: #ffbb01;
-  margin-top: 34px;
 }
 
 .about__title {
+  margin-top: 12px;
   font-weight: 700;
   font-size: 50px;
   line-height: 118%;
-  margin-top: 12px;
 }
 
 .about__info {
   margin-top: 24px;
 }
 
-.main__button {
+.button {
+  border: none;
+  border-radius: 6px;
   font-weight: 700;
   font-size: 12px;
+}
+
+.main__button {
+  margin-top: 38px;
+  padding: 26px 62px;
+  box-shadow: 0 4px 0 #b68500;
   line-height: 110%;
   text-transform: uppercase;
   background-color: #ffbb01;
-  border-radius: 6px;
-  margin-top: 38px;
-  padding: 26px 62px;
-  border: none;
-  box-shadow: 0 4px 0 #b68500;
 }
 
 .about__avatar-container {
@@ -107,8 +109,8 @@
 .about__avatar-image {
   width: 384px;
   height: 384px;
-  border-radius: 50%;
   border: #fff solid 4px;
+  border-radius: 50%;
 }
 
 /*============features============*/
@@ -117,17 +119,16 @@
 }
 
 .section__subtitle {
+  margin-bottom: 49px;
   font-weight: 700;
   font-size: 36px;
   line-height: 117%;
-  margin-bottom: 49px;
 }
 
 .features__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 49px 16px;
-  list-style: none;
   padding-bottom: 6px;
 }
 
@@ -140,16 +141,79 @@
 }
 
 .features__card-title {
+  margin: 10px 0 16px;
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
-  margin: 10px 0 16px;
 }
 
 .features__card-text {
 }
 
 /*============portfolio============*/
+
+.portfolio {
+}
+
+.portfolio__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.portfolio__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 18px;
+  width: 304px;
+  min-height: 304px;
+  border-radius: 6px;
+  padding: 32px;
+}
+
+.card__background-chamarel {
+  background-image: url(../images/chamarel.jpg);
+}
+
+.card__background-golf {
+  background-image: url(../images/golf.png);
+}
+
+.card__background-falls {
+  background-image: url(../images/falls.png);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #213e60 100%);
+}
+
+.full-steam-ahead {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+}
+
+.portfolio__card-button {
+  width: fit-content;
+  padding: 10px 25px;
+  box-shadow: 0 2px 0 #ce1c3e;
+  color: #fff;
+  line-height: 130%;
+  background-color: #ec1f46;
+}
 
 /*============gallery============*/
 
