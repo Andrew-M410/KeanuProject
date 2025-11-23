@@ -113,6 +113,42 @@
 
 /*============features============*/
 
+.features {
+}
+
+.section__subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 117%;
+  margin-bottom: 49px;
+}
+
+.features__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 49px 16px;
+  list-style: none;
+  padding-bottom: 6px;
+}
+
+.features__card {
+}
+
+.features__card-image {
+  width: 52px;
+  height: 52px;
+}
+
+.features__card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  margin: 10px 0 16px;
+}
+
+.features__card-text {
+}
+
 /*============portfolio============*/
 
 /*============gallery============*/
