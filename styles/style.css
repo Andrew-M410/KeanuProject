@@ -217,4 +217,40 @@
 
 /*============gallery============*/
 
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.gallery__image{
+  
+}
+
+.gallery__video{
+  max-height: 20px;
+  position: relative;
+}
+
+.time-player{
+  inset: 0;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+
+.time{ 
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  margin-top: 3px;
+}
+
+.player{
+  margin: 9px 8px 0 4px;
+  width: 16px;
+  height: 16px;
+}
+
 /*============contacts============*/
